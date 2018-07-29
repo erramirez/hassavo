@@ -664,9 +664,9 @@ avo2017 <- read_xls(here("data", "HAB_Retail_Volume_and_Price_2017_conventional_
 #### Import 2018 Data ####
 # use direct link to xls download to pull in latest data
 download.file("http://www.hassavocadoboard.com/excel/retail_volume_price/conventional/2018/Total-U.S./en", 
-              destfile = "2018.xls")
+              destfile = "data/2018.xls")
   
-avo2018<- read_xls(here("2018.xls"))
+avo2018<- read_xls(here("data", "2018.xls"))
 
 
 avo2015_2018 <- bind_rows(avo2015, avo2016, avo2017, avo2018) %>% 
